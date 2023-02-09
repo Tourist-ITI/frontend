@@ -1,0 +1,14 @@
+nav {
+    background-color: #696773 !important;
+}
+
+nav a,
+button {
+    color: #fff;
+}
+
+nav a:hover,
+button:hover,
+.nav-link.active {
+    color: #FFC857;
+}
