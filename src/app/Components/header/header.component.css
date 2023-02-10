@@ -9,6 +9,6 @@ button {
 
 nav a:hover,
 button:hover,
-.nav-link.active {
+.nav-link {
     color: #FFC857;
 }
