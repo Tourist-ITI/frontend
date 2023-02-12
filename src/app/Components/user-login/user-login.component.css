@@ -1,4 +1,4 @@
-#signUp {
+#login {
     margin: 100px 0px;
 }
 
@@ -16,7 +16,7 @@
     border: 1px solid var(--lightgray-color);
 }
 
-.signUp-img img {
+.login-img img {
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
@@ -91,8 +91,8 @@
     color: var(--white-color);
 }
 
-.google-btn:hover i {
-    background: none;
-    color: var(--white-color);
-    -webkit-text-fill-color: unset;
+.google-btn:hover i{
+background: none;
+color: var(--white-color);
+-webkit-text-fill-color: unset;
 }

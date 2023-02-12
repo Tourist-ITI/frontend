@@ -1,14 +1,15 @@
 nav {
-    background-color: #696773 !important;
+    background-color: var(--gray-color) !important;
+    z-index: 9999;
 }
 
 nav a,
 button {
-    color: #fff;
+    color: var(--white-color);
 }
 
 nav a:hover,
 button:hover,
-.nav-link.active {
-    color: #FFC857;
+.nav-link {
+    color: var(--yellow-color);
 }
