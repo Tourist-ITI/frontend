@@ -10,23 +10,28 @@ import { UserSignUpComponent } from './Components/user-sign-up/user-sign-up.comp
 import { ExpertSignUpComponent } from './Components/expert-sign-up/expert-sign-up.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { UserHomeComponent } from "./Components/user-home/user-home.component";
+import { UserLoginComponent } from './Components/user-login/user-login.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    UserSignUpComponent,
-    ExpertSignUpComponent,
-    HeaderComponent,
-    FooterComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        UserSignUpComponent,
+        ExpertSignUpComponent,
+        HeaderComponent,
+        FooterComponent,
+        UserHomeComponent,
+        UserLoginComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+
+    ]
 })
 export class AppModule { }
