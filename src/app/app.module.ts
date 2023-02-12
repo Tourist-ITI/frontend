@@ -12,6 +12,8 @@ import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { ExpertHomeComponent } from './expert-home/expert-home.component';
 import { UserAddToCartComponent } from './user-add-to-cart/user-add-to-cart.component';
+import { UserGovernorateComponent } from './user-governorate/user-governorate.component';
+import { UserPaymentComponent } from './user-payment/user-payment.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { UserAddToCartComponent } from './user-add-to-cart/user-add-to-cart.comp
     HeaderComponent,
     FooterComponent,
     ExpertHomeComponent,
-    UserAddToCartComponent
+    UserAddToCartComponent,
+    UserGovernorateComponent,
+    UserPaymentComponent
   ],
   imports: [
     BrowserModule,
