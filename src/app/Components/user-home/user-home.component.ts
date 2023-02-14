@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-user-home',
@@ -8,3 +8,5 @@ import { Component } from '@angular/core';
 export class UserHomeComponent {
 
 }
+
+

@@ -1,0 +1,120 @@
+/*----------------- home section--------------- */
+#home {
+    background-image: url(../../../assets/Images/home/MicrosoftTeams-image.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.form-control {
+    padding: 0.8rem 2rem;
+}
+
+.btn {
+    background-color: var(--red-color);
+    padding: 0.5rem 2rem;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(0, -50%);
+}
+
+
+/*----------------- destination section--------------- */
+#destination {
+    margin: 80px 0px;
+}
+
+.destination-caption hr {
+    width: 35%;
+    margin: 1rem auto;
+}
+
+.destination-card img {
+    height: 25vw;
+    object-fit: cover;
+}
+
+.destination-card img,
+.overlay {
+    border-radius: 20px;
+}
+
+.overlay {
+    background-color: rgba(102, 101, 101, 0.29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-caption hr {
+    width: 100%;
+    margin: 0.5rem auto;
+    opacity: 1;
+}
+
+.row-second {
+    margin-top: 40px;
+}
+
+
+/*---------------destination section Media-Queries-------------*/
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .destination-card img {
+        height: 100vw;
+        object-fit: cover;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .destination-card img {
+        height: 80vw;
+        object-fit: cover;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .destination-card img {
+        height: 50vw;
+        object-fit: cover;
+    }
+
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+
+ 
+} */
+
+
+/*----------------- Impact section--------------- */
+
+#impact {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 40px 0px;
+}
+
+#impact span {
+    color: var(--yellow-color);
+}
+
+.impact-caption hr {
+    width: 30%;
+    margin: 1rem auto;
+}
+
+.impact-details i {
+    font-size: 28px;
+}
+
+.impact-details span {
+    font-size: 22px;
+}
+
