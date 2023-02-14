@@ -4,3 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --black-color: #272727;
+    --white-color: #FFF;
+    --yellow-color: #FFC857;
+    --blue-color: #009FB7;
+    --gray-color: #696773;
+    --lightgray-color: #e0e0e0;
+    --red-color: #DB3A34;
+    --fb-color: #1877F2;
+}

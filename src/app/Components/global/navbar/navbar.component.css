@@ -1,0 +1,15 @@
+nav {
+    background-color: var(--gray-color) !important;
+    z-index: 9999;
+}
+
+nav a,
+button {
+    color: var(--white-color);
+}
+
+nav a:hover,
+button:hover,
+.nav-link {
+    color: var(--yellow-color);
+}

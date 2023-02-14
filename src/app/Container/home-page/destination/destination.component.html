@@ -1,0 +1,25 @@
+<!-- ***************Start Destinations Section****************** -->
+<section id="destination">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="destination-caption text-center">
+          <h2>OUR DESTINATIONS</h2>
+          <hr />
+          <p>
+            We've have chosen our destinations not only because they are
+            stunning, but also because they are locations off the main tourist
+            trail where we can make a difference. We currently create an impact
+            in 20 governorate across Egypt.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row row-second">
+      <div *ngFor="let card of cards" class="col-md-6 col-lg-3 mb-3">
+        <app-destination-card [card]="card"></app-destination-card>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ***************End Destinations Section****************** -->
