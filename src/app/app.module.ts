@@ -17,8 +17,7 @@ import { DestinationComponent } from './Container/home-page/destination/destinat
 import { ImpactComponent } from './Container/home-page/impact/impact.component';
 import { PopularDestComponent } from './Container/home-page/popular-dest/popular-dest.component';
 import { DestinationCardComponent } from './Components/destination-card/destination-card.component';
-import { UserAddToCartComponent } from './Pages/user-add-to-cart/user-add-to-cart.component';
-import { AddToCartCardComponent } from './Components/add-to-cart-card/add-to-cart-card.component';
+
 
 @NgModule({
     declarations: [
@@ -34,8 +33,6 @@ import { AddToCartCardComponent } from './Components/add-to-cart-card/add-to-car
         ImpactComponent,
         PopularDestComponent,
         DestinationCardComponent,
-        UserAddToCartComponent,
-        AddToCartCardComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
