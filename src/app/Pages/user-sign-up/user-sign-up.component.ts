@@ -10,15 +10,19 @@ import { SignUpService } from '../../services/auth/sign-up.service';
 })
 export class UserSignUpComponent implements OnInit {
 
+  flag: boolean;
 
-  constructor(private signUpService: SignUpService, private router: Router) { }
+  constructor(private signUpService: SignUpService, private router: Router) {
+    this.flag = true;
+  }
+
 
 
   ngOnInit(): void { };
 
 
   validationForm = new FormGroup({
-    username: new FormControl('', [Validators.required]),
+    username: new FormControl('', [Validators.required, Validators.pattern('[a-zA-Z ]*')]),
     phone: new FormControl('', [Validators.required, Validators.minLength(11), Validators.maxLength(11)]),
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', [Validators.required, Validators.minLength(6)]),
@@ -39,14 +43,53 @@ export class UserSignUpComponent implements OnInit {
     if (this.isValidPassword(this.validationForm.value)) {
       this.signUpService.addUser(this.validationForm.value).subscribe();
       console.log(this.validationForm.value)
+
+      this.flag = true;
+      this.signUpService.addUser(this.validationForm.value).subscribe();
+      console.log(this.validationForm.value);
     }
 
 
     else {
       console.log('Password Not Matched');
     }
+
+  }
+
+  checkForm() {
+
+    if (this.validationForm.valid) {
+
+      this.signUp();
+    }
+
+    else {
+
+      this.flag = false;
+      console.log("Inputs Not Valid");
+      console.log(this.validationForm);
+    }
+
   };
 
 
-};
+
+  get nameValid() {
+    return this.validationForm.controls['username'].valid;
+  }
+  get phoneValid() {
+    return this.validationForm.controls['phone'].valid;
+  }
+  get emailValid() {
+    return this.validationForm.controls['email'].valid;
+  }
+  get passwordValid() {
+    return this.validationForm.controls['password'].valid;
+  }
+  get confirmPasswordValid() {
+    return this.validationForm.controls['confirm_password'].valid;
+
+  };
+
+}
 

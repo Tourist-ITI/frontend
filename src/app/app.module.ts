@@ -31,6 +31,11 @@ import { WhereToMeetComponent } from './Container/tourDetails-page/where-to-meet
 import { TravelerTipsComponent } from './Container/tourDetails-page/traveler-tips/traveler-tips.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
+
+import { ExploreComponent } from './Container/home-page/explore/explore.component';
+import { QuoteComponent } from './Container/home-page/quote/quote.component';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -57,6 +62,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
         ThisIsThePlanComponent,
         WhereToMeetComponent,
         TravelerTipsComponent, 
+
+
+
+        ExploreComponent,
+        QuoteComponent
+
     ],
     providers: [],
     bootstrap: [AppComponent],

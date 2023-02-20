@@ -1,46 +1,79 @@
 <section id="login">
   <div class="container">
-    <div class="row justify-content-evenly">
+    <div class="row justify-content-evenly flex-md-row flex-column-reverse">
       <div class="col-md-5">
-        <div class="mb-5">
+        <div class="mb-3">
           <h3 class="text-center">Welcome</h3>
         </div>
 
         <div>
-          <form>
+          <form [formGroup]="validationForm">
             <div class="mb-3">
               <input
+              formControlName="email"
                 type="email"
                 class="form-control"
                 aria-describedby="emailHelp"
                 placeholder="Example@mail.com"
               />
+
+              <div
+              *ngIf=" !flag ||
+                (!emailValid && this.validationForm.value['email'])
+              "
+              class="alert alert-danger my-1"
+              role="alert"
+            >
+              Wrong email format
             </div>
+          </div>
+            
 
             <div class="mb-3">
               <input
+              formControlName="password"
                 type="password"
                 class="form-control"
                 placeholder="Enter Your Password"
               />
+              <div
+              *ngIf="!flag ||
+                (!passwordValid&& this.validationForm.value['password'])
+              "
+              class="alert alert-danger my-1"
+              role="alert"
+            >
+              Weak password
             </div>
-
-            <button type="button" class="btn btn-dark w-100 my-3">Login</button>
+            </div>
+            <input
+              type="submit"
+              class="btn btn-dark w-100 my-3"
+              value="Login"
+              (click)="login()"
+            />
             <div class="mt-2">
               <p class="form-parg text-center">Or</p>
             </div>
-            <div class="d-flex mb-2">
-              <div class="fb-btn w-50 me-3">
-                <button type="button" class="btn w-100 brdr">
-                  <span class="ms-3">Signup with facebook</span>
-                </button>
-                <i class="fa-brands fa-facebook"></i>
-              </div>
-              <div class="google-btn w-50">
-                <button type="button" class="brdr btn w-100">
-                  Signup with google
-                </button>
-                <i class="fa-brands fa-google"></i>
+
+            <div class="container">
+              <div class="row justify-content-evenly">
+                <div class="col-md-6">
+                  <div class="fb-btn mb-2">
+                    <button type="button" class="btn w-100 brdr">
+                      <span class="ms-3">Signup with facebook</span>
+                    </button>
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="google-btn">
+                    <button type="button" class="btn w-100 brdr">
+                      Signup with google
+                    </button>
+                    <i class="fa-brands fa-google"></i>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -51,10 +84,10 @@
         </div>
       </div>
 
-      <div class="col-md-5 d-flex">
+      <div class="col-md-5 d-flex mb-3">
         <div class="login-img d-flex">
           <img
-            src="../../../assets/Images/login/Screenshot 2023-02-08 004530.png"
+            src="../../../assets/Images/login/Login.png"
             class="w-100"
             alt=""
           />
