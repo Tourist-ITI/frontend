@@ -1,0 +1,89 @@
+/* ------------Tour Card Start------------ */
+.tour-card {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0px 3px 3px #d0cfcf;
+    margin-bottom: 20px;
+    font-family: 'Inter';
+  }
+  .tour-card p {
+    margin-bottom: 0px;
+  }
+  .tour-card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .tour-card-details {
+    padding: 16px;
+  }
+  
+  .profile img {
+    position: absolute;
+    left: 73.42%;
+    right: 4.77%;
+    top: 50%;
+    bottom: 31.82%;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    background-color: aqua;
+  }
+  .favourite{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 84.33%;
+    right: 8.04%;
+    top: 5%;
+    bottom: 86.67%;
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+  }
+  
+  .favourite:hover{
+    border-radius: 50%;
+    background-color: red;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .tour-card-details p:first-of-type {
+    font-size: 14px;
+    color: #9a9999;
+  }
+  
+  .tour-card-details .tourCard-price span {
+    /* background-color: red; */
+    color: #009eb7;
+    font-size: 24px;
+    line-height: 39px;
+  }
+  
+  .gb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tourCard-review {
+    color: #edab56;
+    font-size: 14px;
+  }
+  
+  .tourCard-review span{
+    color: black;
+   font-size: 14px;
+  }
+  .btn-subscribe {
+    margin-top: 10px;
+    background-color: #009eb7;
+    width: 130%;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+  }
+  /* ------------Tour Card End------------ */
