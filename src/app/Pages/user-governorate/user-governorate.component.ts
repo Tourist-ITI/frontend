@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class UserGovernorateComponent {
 
+tourCards=[{src:'../../../assets/Images/eachGovernate/alexandria-4.jpg',location:'Alexandria'},
+{src:'../../../assets/Images/eachGovernate/alexandria-4.jpg',location:'Alexandria'}];
+
+
+
 }

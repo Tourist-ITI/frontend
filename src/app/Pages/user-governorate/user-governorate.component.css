@@ -1,3 +1,10 @@
+
+.tour-cards{
+  margin-top: 7.5rem;
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 
@@ -118,3 +125,4 @@
   color: white;
   border-radius: 10px;
 }
+

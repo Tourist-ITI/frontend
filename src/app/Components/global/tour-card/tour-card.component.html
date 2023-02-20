@@ -1,26 +1,41 @@
+
 <!---------------- Tour Card Start---------------- -->
+
 <div class="tour-card">
     <div class="favourite">
       <i class="fa-regular fa-heart"></i>
     </div>
     <div class="tour-card-img">
       <img
+
+        src="{{card.src}}"
+
         src="{{tourCard.cardImg}}"
+
         class="w-100"
         alt=""
       />
     </div>
     <div class="profile">
       <img
+
+        src="../../../assets/Images/eachGovernate/profile 1.jpg"
+
         src="{{tourCard.profileImg}}"
+
         alt=""
       />
     </div>
 
     <div class="tour-card-details">
       <div>
+
+        <p>{{card.location}} | 8 days</p>
+        <p class="tourCard-price "><span  class="fw-bold">$2,965</span> per person</p>
+
         <p>Alexandria | 8 days</p>
         <p class="tourCard-price "><span  class="fw-bold">{{tourCard.price}}</span> per person</p>
+
         <h4 class="fw-bold">
           Nature and Culture of Alexandria in 8 days
         </h4>
@@ -39,5 +54,9 @@
         </div>
       </div>
     </div>
+
+  </div>
+
   </div>
 <!---------------- Tour Card End---------------- -->
+

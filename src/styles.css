@@ -14,7 +14,13 @@
     --lightgray-color: #e0e0e0;
     --red-color: #DB3A34;
     --fb-color: #1877F2;
+
+    
+    --pt:8rem;
+    --pt-s:4rem;
+    --pt-xs:2rem;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+

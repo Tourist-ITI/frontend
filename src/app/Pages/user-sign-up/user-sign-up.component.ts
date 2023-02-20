@@ -41,12 +41,17 @@ export class UserSignUpComponent implements OnInit {
   signUp() {
 
     if (this.isValidPassword(this.validationForm.value)) {
+
+      this.signUpService.addUser(this.validationForm.value).subscribe();
+      console.log(this.validationForm.value)
+
       this.signUpService.addUser(this.validationForm.value).subscribe();
       console.log(this.validationForm.value)
 
       this.flag = true;
       this.signUpService.addUser(this.validationForm.value).subscribe();
       console.log(this.validationForm.value);
+
     }
 
 
