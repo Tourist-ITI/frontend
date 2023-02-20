@@ -18,19 +18,11 @@ import { DestinationComponent } from './Container/home-page/destination/destinat
 import { ImpactComponent } from './Container/home-page/impact/impact.component';
 import { PopularDestComponent } from './Container/home-page/popular-dest/popular-dest.component';
 import { DestinationCardComponent } from './Components/destination-card/destination-card.component';
-import { UserAddToCartComponent } from './Pages/user-add-to-cart/user-add-to-cart.component';
-import { AddToCartCardComponent } from './Components/add-to-cart-card/add-to-cart-card.component';
 
-import { UserGovernorateComponent } from './Pages/user-governorate/user-governorate.component';
-import { HeaderGovComponent } from './Container/user-governorate/header/headerGov.component';
-import { UserPaymentComponent } from './Pages/user-payment/user-payment.component';
-import { AboutUsComponent } from './Pages/about-us/about-us.component';
-import { VisionComponent } from './Container/aboutUs-page/vision/vision.component';
-import { OurStoryComponent } from './Container/aboutUs-page/our-story/our-story.component';
-import { StatisticsComponent } from './Container/aboutUs-page/statistics/statistics.component';
-import { WhyBookComponent } from './Container/aboutUs-page/why-book/why-book.component';
 
-import { TourSliderComponent } from './Components/tour-slider/tour-slider.component';
+
+
+
 import { FoodSliderComponent } from './Container/tourDetails-page/food-slider/food-slider.component';
 import { DetailsCardComponent } from './Container/tourDetails-page/details-card/details-card.component';
 import { ReasonsToBookComponent } from './Container/tourDetails-page/reasons-to-book/reasons-to-book.component';
@@ -62,19 +54,9 @@ import { QuoteComponent } from './Container/home-page/quote/quote.component';
         ImpactComponent,
         PopularDestComponent,
         DestinationCardComponent,
-        UserAddToCartComponent,
-        AddToCartCardComponent,
+        
 
-        UserGovernorateComponent,
-        HeaderGovComponent,
-        UserPaymentComponent,
-        AboutUsComponent,
-        VisionComponent,
-        OurStoryComponent,
-        StatisticsComponent,
-        WhyBookComponent
-
-        TourSliderComponent,
+       
         BookNowCardComponent,
         DetailsCardComponent,
         ReasonsToBookComponent,
