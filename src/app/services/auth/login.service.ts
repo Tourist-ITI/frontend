@@ -4,16 +4,15 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class SignUpService {
+export class LoginService {
 
-  constructor(private myHttp: HttpClient) { };
+  constructor(private myHttp: HttpClient) { }
 
-  private baseUrl = 'https://travel-8ztv.onrender.com/v1/users/sign-up/user';
+  private baseUrl = 'https://travel-8ztv.onrender.com/v1/users/sign-in/user';
 
-  //add user
-  addUser(user: any) {
+  //login user
+  loginUser(user: any) {
     return this.myHttp.post(this.baseUrl, user); //return observable object
-  };
+  }
 
-};
-
+}

@@ -10,11 +10,12 @@ import { SignUpService } from '../../services/auth/sign-up.service';
 })
 export class UserSignUpComponent implements OnInit {
 
-  flag: boolean | any;
+  flag: boolean;
 
   constructor(private signUpService: SignUpService, private router: Router) {
     this.flag = true;
   }
+
 
 
   ngOnInit(): void { };
@@ -39,28 +40,33 @@ export class UserSignUpComponent implements OnInit {
 
   signUp() {
 
+    if (this.isValidPassword(this.validationForm.value)) {
+      this.flag = true;
+      this.signUpService.addUser(this.validationForm.value).subscribe();
+      console.log(this.validationForm.value);
+    }
 
-    console.log(this.validationForm);
+
+    else {
+      console.log('Password Not Matched');
+    }
+
+  }
+
+  checkForm() {
 
     if (this.validationForm.valid) {
 
-      if (this.isValidPassword(this.validationForm.value)) {
-        this.flag = true;
-        this.signUpService.addUser(this.validationForm.value).subscribe();
-        console.log(this.validationForm.value)
-      }
-
-
-      else {
-        console.log('Password Not Matched');
-      }
+      this.signUp();
     }
 
     else {
-      console.log("Inputs Not Valid");
-      this.flag = false;
 
+      this.flag = false;
+      console.log("Inputs Not Valid");
+      console.log(this.validationForm);
     }
+
   };
 
 
@@ -81,5 +87,6 @@ export class UserSignUpComponent implements OnInit {
     return this.validationForm.controls['confirm_password'].valid;
 
   };
+
 }
 
