@@ -1,0 +1,35 @@
+<section id="addToCart">
+  <div class="container mt-5 d-flex justify-content-evenly">
+    <div class="row justify-content-evenly row-card">
+      <div
+        *ngFor="let card of cards"
+        class="col-lg-5 col-md-8 cardsContainer mb-3"
+      >
+        <app-add-to-cart-card [card]="card"></app-add-to-cart-card>
+      </div>
+    </div>
+
+    <div
+      *ngFor="let reviewCard of reviewCards"
+      class="reviewOrder-card col-sm-8 border rounded shadow-sm"
+    >
+      <h4>Review Order Details</h4>
+      <div class="reviewOrder-card-details mt-4">
+        <div>
+          <p>Booking Fee</p>
+          <p>Subtotal</p>
+          <p class="fw-bold mt-2 mb-2">Total</p>
+        </div>
+        <div>
+          <p>EGP {{ reviewCard.booking_fee }}</p>
+          <p>EGP{{ reviewCard.subTotal }}</p>
+          <p class="fw-bold mt-2 mb-2">EGP{{ reviewCard.total }}</p>
+        </div>
+      </div>
+      <p class="text">no additional taxes & fees</p>
+      <div class="btn-checkOut-container">
+        <a class="btn btn-checkOut" href="#">Checkout</a>
+      </div>
+    </div>
+  </div>
+</section>
