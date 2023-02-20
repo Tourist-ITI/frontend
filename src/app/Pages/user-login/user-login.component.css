@@ -1,5 +1,5 @@
 #login {
-    margin: 100px 0px;
+    margin-top: 100px;
 }
 
 .form-control {
@@ -91,8 +91,17 @@
     color: var(--white-color);
 }
 
-.google-btn:hover i{
-background: none;
-color: var(--white-color);
--webkit-text-fill-color: unset;
+.google-btn:hover i {
+    background: none;
+    color: var(--white-color);
+    -webkit-text-fill-color: unset;
 }
+
+.login-img {
+    object-fit: cover;
+}
+
+.alert {
+    padding: 0.6rem 0.75rem;
+}
+
