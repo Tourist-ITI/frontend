@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Poppins:wght@300&display=swap');
+.Join {
+    margin-top: 50px ;
+}
+.joinUs-img img {
+    width: 80%;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    position: absolute;
+   top: 0;
+   height: 600px;
+    /* min-height: fit-content; */
+}
+/* .two_sec {
+    border: 2px solid red;
+} */
+.box-behined-img {
+    height: 600px;
+    width: 80%;
+    background-color: rgba(0, 158, 183, 0.8);
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    position: absolute;
+    right: 150px;
+    top: 40px;
+}
+.twoBoxes {
+    position: relative;
+    /* border: 2px solid green; */
+    height: 632px;
+}
+.join-title {
+    font-family: "Manrope";
+    text-transform: capitalize;
+    font-size: 90px;
+    font-weight: 200px;
+}
+.join-parag {
+    font-family: "Poppins";
+    font-size : 22px;
+    color:#7E7B7B;
+    /* text-align: center; */
+}
+.join-btn a {
+    text-decoration: none;
+    font-family: "Poppins";
+    font-weight: 600px;
+    font-size: 20px;
+    color: #fff;
+}
+.join-btn {
+    background-color: #272727;
+    padding: 10px 100px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.4s;
+
+}
+.join-btn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 158, 183, 0.8);
+}
+.join-btn a:hover {
+    color: #272727;
+    font-weight: 600px;
+}
