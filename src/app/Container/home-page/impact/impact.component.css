@@ -19,7 +19,7 @@
     font-size: 28px;
 }
 
-.impact-details i:hover{
+.impact-details i:hover {
     color: var(--yellow-color);
     transform: scale(1.1);
 }
@@ -28,5 +28,8 @@
     font-size: 22px;
 }
 
+.row-second {
+    margin-top: 40px;
+}
 
 /*----------------- Impact section End--------------- */
