@@ -12,7 +12,7 @@ export class SignUpService {
 
   //add user
   addUser(user: any) {
-    return this.myHttp.post(this.baseUrl, user); //observable
+    return this.myHttp.post(this.baseUrl, user); //return observable object
   };
 
 };

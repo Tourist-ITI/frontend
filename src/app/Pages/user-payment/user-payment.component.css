@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
 p{
   margin-bottom: 0.5rem;
@@ -135,3 +136,68 @@ a {
 @media(max-width:768px){
 
 } */
+=======
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+#countries {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.notes{
+    display: flex;
+    justify-content: space-around; 
+}
+.notes i{
+    font-size: 40px;
+}
+
+.notes p:first-of-type{
+    font-size: 18px;
+    font-weight: 700;
+}
+.btn-request{
+    margin-top: 10px;
+    background-color: #009eb7;
+    width: 60%;
+    height: 40px;
+    color: white;
+    border-radius: 10px; 
+}
+/*-------------- payment card -------------*/
+.payment-card{
+    box-sizing: border-box;
+    border: 1px solid #d0cfcf;
+    border-radius: 15px;  
+    padding: 16px;
+    font-family: 'Inter';
+}
+.payment-card-tourDetails{
+    display: flex;
+    justify-content: space-between; 
+    
+}
+.payment-card-img{
+    width: 50%;
+    
+}
+.payment-card-img img{
+    border-radius: 10px;
+    width:200px;
+    height:200px;
+}
+
+.payment-card-priceDetails{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.payment-card-priceTotal{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+

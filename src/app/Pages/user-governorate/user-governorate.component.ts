@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-governorate.component.css']
 })
 export class UserGovernorateComponent {
+
 tourCards=[{src:'../../../assets/Images/eachGovernate/alexandria-4.jpg',location:'Alexandria'},
 {src:'../../../assets/Images/eachGovernate/alexandria-4.jpg',location:'Alexandria'}];
+
+
+
 }
