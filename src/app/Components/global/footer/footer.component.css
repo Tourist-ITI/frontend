@@ -75,7 +75,7 @@ color: var(--yellow-color);
     color: #FF0000;
 }
 
-.socialMedia i:nth-of-child() {
+.socialMedia i:nth-child(4) {
     color: #1D9BF0;
 }
 
