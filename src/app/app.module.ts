@@ -17,8 +17,13 @@ import { DestinationComponent } from './Container/home-page/destination/destinat
 import { ImpactComponent } from './Container/home-page/impact/impact.component';
 import { PopularDestComponent } from './Container/home-page/popular-dest/popular-dest.component';
 import { DestinationCardComponent } from './Components/destination-card/destination-card.component';
+
+
+
+
 import { ExploreComponent } from './Container/home-page/explore/explore.component';
 import { QuoteComponent } from './Container/home-page/quote/quote.component';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -33,8 +38,11 @@ import { QuoteComponent } from './Container/home-page/quote/quote.component';
         ImpactComponent,
         PopularDestComponent,
         DestinationCardComponent,
+
+
         ExploreComponent,
         QuoteComponent
+
     ],
     providers: [],
     bootstrap: [AppComponent],
