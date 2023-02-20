@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Manrope:wght@300&family=Poppins:wght@300&display=swap');
+
+/* Hager variables
+--fontFamily : "Inter";
+--fs-xl:3.8rem;
+--fs-lg:3rem;
+--fs-md:1.4rem;
+--fs-s-md:1.3rem;
+--pt:8rem;
+--pt-s:4rem;
+--pt-xs:2rem;
+--white-color:#fff;
+--light-gray:#3c3a3a;
+--baby-blue :#009EB7;
+--baby-blue-hover :#048599;
+--full-viewPort :100vh;
+--text-captalized: capitalize;
+--text-centered: center; */
+#bookCard {
+--mt : 6.5rem;
+--fs-xl:3.8rem;
+--fs-lg:3rem;
+--fs-md:1.4rem;
+--fs-s-md:1.3rem;
+--pt-xs:2rem;
+--pt-s:4rem;
+font-family: var(--fontFamily);
+position: fixed;
+top: 6.8rem;
+}
+.card {
+   border: none;
+}
+.sellBtn {
+    background-color: var( --red-color) ;
+    border: 1px solid var( --red-color);
+    padding: .4rem var(--pt-xs);
+    margin: 0 auto;
+}
+.addToCart_btn {
+    padding: .4rem var(--pt-s);
+    color: var( --blue-color);
+    transition: 0.4s ease-in-out;
+}
+.addToCart_btn:hover {
+    background-color: var(--black-color);
+    color:  var(--white-color);
+    border: 1px solid var(--black-color);
+}
+.book_btn {
+    padding: .4rem var(--pt-s);
+    background-color: var( --blue-color);
+    border: 1px solid var( --blue-color);
+    transition: 0.4s ease-in-out;
+}
+.book_btn:hover {
+    background-color: var(--black-color);
+    border: 1px solid var(--black-color);
+}
+.card span {
+  font-size: var(--fs-md);
+  color: var( --blue-color);
+}
+.stars {
+    color: var(--yellow-color) !important;
+    font-size:  10px;
+}
+input {
+    outline:none;
+}
+input:hover {
+ cursor: pointer;
+}
+input:focus {
+    border: 2px solid var( --blue-color);
+}
