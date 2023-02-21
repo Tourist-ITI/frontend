@@ -43,6 +43,8 @@ import { HeaderGovComponent } from './Container/user-governorate/header/headerGo
 import { UserAddToCartComponent } from './Pages/user-add-to-cart/user-add-to-cart.component';
 import { AddToCartCardComponent } from './Components/add-to-cart-card/add-to-cart-card.component';
 
+import { UserPaymentComponent } from './Pages/user-payment/user-payment.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -83,6 +85,8 @@ import { AddToCartCardComponent } from './Components/add-to-cart-card/add-to-car
 
     UserAddToCartComponent,
     AddToCartCardComponent,
+
+    UserPaymentComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
