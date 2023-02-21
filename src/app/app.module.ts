@@ -28,9 +28,17 @@ import { ThisIsThePlanComponent } from './Container/tourDetails-page/this-is-the
 import { WhereToMeetComponent } from './Container/tourDetails-page/where-to-meet/where-to-meet.component';
 import { TravelerTipsComponent } from './Container/tourDetails-page/traveler-tips/traveler-tips.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { AboutUsComponent } from './Pages/about-us/about-us.component';
 import { ExploreComponent } from './Container/home-page/explore/explore.component';
 import { QuoteComponent } from './Container/home-page/quote/quote.component';
+
+import { WhyBookComponent } from './Container/aboutUs-page/why-book/why-book.component';
+import { VisionComponent } from './Container/aboutUs-page/vision/vision.component';
+import { StatisticsComponent } from './Container/aboutUs-page/statistics/statistics.component';
+import { OurStoryComponent } from './Container/aboutUs-page/our-story/our-story.component';
+
+import { UserGovernorateComponent } from './Pages/user-governorate/user-governorate.component';
+import { HeaderGovComponent } from './Container/user-governorate/header/headerGov.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +68,15 @@ import { QuoteComponent } from './Container/home-page/quote/quote.component';
 
     ExploreComponent,
     QuoteComponent,
+
+    AboutUsComponent,
+    WhyBookComponent,
+    VisionComponent,
+    StatisticsComponent,
+    OurStoryComponent,
+
+    UserGovernorateComponent,
+    HeaderGovComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
