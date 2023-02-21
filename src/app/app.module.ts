@@ -1,14 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule, } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserSignUpComponent } from './Pages/user-sign-up/user-sign-up.component';
 import { FooterComponent } from './Components/global/footer/footer.component';
-import { UserHomeComponent } from "./Pages/user-home/user-home.component";
+import { UserHomeComponent } from './Pages/user-home/user-home.component';
 import { UserLoginComponent } from './Pages/user-login/user-login.component';
 import { TourDetailsComponent } from './Pages/tour-details/tour-details.component';
 import { TourCardComponent } from './Components/global/tour-card/tour-card.component';
@@ -18,10 +17,7 @@ import { DestinationComponent } from './Container/home-page/destination/destinat
 import { ImpactComponent } from './Container/home-page/impact/impact.component';
 import { PopularDestComponent } from './Container/home-page/popular-dest/popular-dest.component';
 import { DestinationCardComponent } from './Components/destination-card/destination-card.component';
-
-
-
-
+import { TourSliderComponent } from './Components/tour-slider/tour-slider/tour-slider.component';
 
 import { FoodSliderComponent } from './Container/tourDetails-page/food-slider/food-slider.component';
 import { DetailsCardComponent } from './Container/tourDetails-page/details-card/details-card.component';
@@ -33,55 +29,47 @@ import { WhereToMeetComponent } from './Container/tourDetails-page/where-to-meet
 import { TravelerTipsComponent } from './Container/tourDetails-page/traveler-tips/traveler-tips.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-
-
 import { ExploreComponent } from './Container/home-page/explore/explore.component';
 import { QuoteComponent } from './Container/home-page/quote/quote.component';
 
-
 @NgModule({
-    declarations: [
-        AppComponent,
-        UserSignUpComponent,
-        NavbarComponent,
-        FooterComponent,
-        UserHomeComponent,
-        UserLoginComponent,
-        TourDetailsComponent,
-        TourCardComponent,
-        HeaderComponent,
-        DestinationComponent,
-        ImpactComponent,
-        PopularDestComponent,
-        DestinationCardComponent,
-        
+  declarations: [
+    AppComponent,
+    UserSignUpComponent,
+    NavbarComponent,
+    FooterComponent,
+    UserHomeComponent,
+    UserLoginComponent,
+    TourDetailsComponent,
+    TourCardComponent,
+    HeaderComponent,
+    DestinationComponent,
+    ImpactComponent,
+    PopularDestComponent,
+    DestinationCardComponent,
+    TourSliderComponent,
 
-       
-        BookNowCardComponent,
-        DetailsCardComponent,
-        ReasonsToBookComponent,
-        TourDetailsSliderComponent,
-        FoodSliderComponent,
-        ThisIsThePlanComponent,
-        WhereToMeetComponent,
-        TravelerTipsComponent, 
+    BookNowCardComponent,
+    DetailsCardComponent,
+    ReasonsToBookComponent,
+    TourDetailsSliderComponent,
+    FoodSliderComponent,
+    ThisIsThePlanComponent,
+    WhereToMeetComponent,
+    TravelerTipsComponent,
 
-
-
-        ExploreComponent,
-        QuoteComponent
-
-
-    ],
-    providers: [],
-    bootstrap: [AppComponent],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        FormsModule,
-        ReactiveFormsModule,
-        HttpClientModule,
-        NgbModule,
-    ]
+    ExploreComponent,
+    QuoteComponent,
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgbModule,
+  ],
 })
-export class AppModule { }
+export class AppModule {}
