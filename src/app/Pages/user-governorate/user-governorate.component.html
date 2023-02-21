@@ -4,10 +4,10 @@
 </section>
 <section id="tour-cards mt-5">
   <div class="container mt-5">
-    <div class="row justify-content-evenly tour-cards">
+    <div class="row tour-cards">
       <!-- /*-------------- tour card -------------*/ -->
       <div *ngFor="let tourCard of tourCards" class="col-lg-4 col-md-6">
-        <app-tour-card [card]="tourCard"></app-tour-card>
+        <app-tour-card [tourCard]="tourCard"></app-tour-card>
       </div>
       <!-- <img src="../../../assets/Images/eachGovernate/alexandria-4.jpg" alt=""> -->
     </div>

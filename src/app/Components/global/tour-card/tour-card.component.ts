@@ -7,9 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class TourCardComponent {
 
-  @Input() card: { src:String,location: String } | any;
-
-
+  
   @Input() tourCard: { cardImg: String, profileImg: String, price: String } | any;
 
 
