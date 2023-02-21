@@ -44,6 +44,7 @@ import { UserAddToCartComponent } from './Pages/user-add-to-cart/user-add-to-car
 import { AddToCartCardComponent } from './Components/add-to-cart-card/add-to-cart-card.component';
 
 import { UserPaymentComponent } from './Pages/user-payment/user-payment.component';
+import { JoinUsComponent } from './Pages/join-us/join-us/join-us.component';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,7 @@ import { UserPaymentComponent } from './Pages/user-payment/user-payment.componen
     PopularDestComponent,
     DestinationCardComponent,
     TourSliderComponent,
-
+    JoinUsComponent,
     BookNowCardComponent,
     DetailsCardComponent,
     ReasonsToBookComponent,
@@ -99,4 +100,4 @@ import { UserPaymentComponent } from './Pages/user-payment/user-payment.componen
     NgbModule,
   ],
 })
-export class AppModule {}
+export class AppModule { }
