@@ -40,6 +40,9 @@ import { OurStoryComponent } from './Container/aboutUs-page/our-story/our-story.
 import { UserGovernorateComponent } from './Pages/user-governorate/user-governorate.component';
 import { HeaderGovComponent } from './Container/user-governorate/header/headerGov.component';
 
+import { UserAddToCartComponent } from './Pages/user-add-to-cart/user-add-to-cart.component';
+import { AddToCartCardComponent } from './Components/add-to-cart-card/add-to-cart-card.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,7 +79,10 @@ import { HeaderGovComponent } from './Container/user-governorate/header/headerGo
     OurStoryComponent,
 
     UserGovernorateComponent,
-    HeaderGovComponent
+    HeaderGovComponent,
+
+    UserAddToCartComponent,
+    AddToCartCardComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
